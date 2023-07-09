@@ -8,7 +8,7 @@ WORKDIR /app
 COPY demo-0.0.1.jar .
 
 # Expose the desired port (replace with the appropriate port number)
-EXPOSE 80
+
 
 # Set the command to run the application
 CMD ["java", "-jar", "demo-0.0.1.jar"]
