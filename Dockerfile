@@ -1,13 +1,15 @@
+# Use a base image with Java pre-installed
+FROM openjdk:11-jre-slim
 
-
-# Use a base image with Java installed
-FROM openjdk:11
-
-# Set the working directory
+# Set the working directory inside the container
 WORKDIR /app
 
 # Copy the JAR file to the container
-COPY demo-0.0.1.jar /app/
+COPY demo-0.0.1.jar .
+
+# Expose the desired port (replace with the appropriate port number)
 EXPOSE 80
-# Define the entry point command to run the JAR file
+
+# Set the command to run the application
 CMD ["java", "-jar", "demo-0.0.1.jar"]
+
