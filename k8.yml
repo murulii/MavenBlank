@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: murulii/k8project:jhooq-docker-demo
+          image: murulii/myproject:v1
           ports:
             - containerPort: 8080
           env:
