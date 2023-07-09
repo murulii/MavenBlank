@@ -8,6 +8,6 @@ WORKDIR /app
 
 # Copy the JAR file to the container
 COPY demo-0.0.1.jar /app/
-
+EXPOSE 80
 # Define the entry point command to run the JAR file
 CMD ["java", "-jar", "demo-0.0.1.jar"]
