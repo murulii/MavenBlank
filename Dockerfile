@@ -1,3 +1,5 @@
+
+
 # Use a base image with Java installed
 FROM openjdk:11
 
@@ -5,7 +7,7 @@ FROM openjdk:11
 WORKDIR /app
 
 # Copy the JAR file to the container
-COPY demo-0.0.1.jar /app/
+COPY github-action-maven-tutorial-1.0-SNAPSHOT.jar /app/
 
 # Define the entry point command to run the JAR file
-CMD ["java", "-jar", "demo-0.0.1.jar"]
+CMD ["java", "-jar", "github-action-maven-tutorial-1.0-SNAPSHOT.jar"]
